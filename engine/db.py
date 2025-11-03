@@ -30,7 +30,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, n
 desired_columns_indices = [0, 1]
 
 # Read data from CSV and insert into SQLite table for the desired columns
-with open('contacts.csv', 'r', encoding='utf-8') as csvfile:
+with open('www\\contacts.csv', 'r', encoding='utf-8') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
         selected_data = [row[i] for i in desired_columns_indices]
